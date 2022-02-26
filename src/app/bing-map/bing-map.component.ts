@@ -1,4 +1,4 @@
-import { Component, OnInit,  } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
 
 @Component({
   selector: 'app-bing-map',
@@ -8,20 +8,22 @@ import { Component, OnInit,  } from '@angular/core';
 
 
 
+  
 export class BingMapComponent implements OnInit {
-
- 
-  // using ViewChild to reference the div instead of setting an id
-
- 
+  
+  public layerType!: string;
+  public bingMapType!: string;
+  public key!: string;
   
 
   constructor() { }
-
+  
   
   ngOnInit(): void {
-  
-
+    this.layerType = 'Bing';
+    this.bingMapType = 'AerialWithLabel';
+    this.key = 'AjSXTx2lvl0DYGcx1ojTmTCxYPlIxnwzIx-kUWwrMkROq3Pn2ojPbQVF07O_kK5T';
+// using ViewChild to reference the div instead of setting an id
   }
  
   ngAfterViewInit(){
