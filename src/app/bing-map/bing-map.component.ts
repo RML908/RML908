@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { map } from 'rxjs';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-bing-map',
@@ -7,22 +6,25 @@ import { map } from 'rxjs';
   styleUrls: ['./bing-map.component.css']
 })
 
-let myMap:any
-@ViewChild('myMap')myMap; 
+
+
 export class BingMapComponent implements OnInit {
-  
+
  
   // using ViewChild to reference the div instead of setting an id
   public pageTitle: string = "Map";
   myMap: any;
+ 
+  
 
   constructor() { }
 
   
   ngOnInit(): void {
+  
 
   }
-
+ 
   ngAfterViewInit(){
     var map = new Microsoft.Maps.Map(this.myMap.nativeElement, {
         credentials: 'Bing Map Key - I removed it here'
@@ -32,5 +34,7 @@ export class BingMapComponent implements OnInit {
     layer.add(pushpin);
     map.layers.insert(layer);
   }
+  @ViewChild('Map', { static: false })
+  mapElement!: ElementRef;
 }
 
