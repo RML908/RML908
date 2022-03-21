@@ -1,34 +1,24 @@
-import { Component, OnInit  } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild, ViewEncapsulation,  } from '@angular/core';
+import { Options } from '@popperjs/core/lib/modifiers/flip';
+import { MarkerTypeId, IBox,  IMarkerIconInfo, IMapOptions, ILatLong,   } from 'angular-maps';
+import { map } from 'rxjs';
+
 
 @Component({
   selector: 'app-bing-map',
   templateUrl: './bing-map.component.html',
   styleUrls: ['./bing-map.component.css']
+  
+  
 })
 
-
-
-  
-export class BingMapComponent implements OnInit {
-  
-  public layerType!: string;
-  public bingMapType!: string;
-  public key!: string;
-  
-
-  constructor() { }
-  
-  
-  ngOnInit(): void {
-    this.layerType = 'Bing';
-    this.bingMapType = 'AerialWithLabel';
-    this.key = 'AjSXTx2lvl0DYGcx1ojTmTCxYPlIxnwzIx-kUWwrMkROq3Pn2ojPbQVF07O_kK5T';
-// using ViewChild to reference the div instead of setting an id
-  }
  
-  ngAfterViewInit(){
-   
-  }
+// let _options:any
 
-}
+export class BingMapComponent {
+ 
+
+
+  }
 
