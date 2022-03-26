@@ -6,7 +6,11 @@ import { AppComponent } from './app.component';
 import { BingMapComponent } from './bing-map/bing-map.component';
 // import { BingMapComponent } from './bing-map/bing-map.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path:'bing-map'
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes), BrowserModule,FormsModule],
