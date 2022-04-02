@@ -5,15 +5,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BingMapComponent } from './bing-map/bing-map.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LessonComponent } from './lessons/lesson.component';
 
 // import { AgmCoreModule } from '@agm/core';
 @NgModule({
   declarations: [
-  
-    BingMapComponent,
     AppComponent,
   LessonComponent
     
@@ -34,7 +31,7 @@ import { LessonComponent } from './lessons/lesson.component';
     //   provide: MapAPILoader, deps: [], useFactory: BingMapServiceProviderFactory 
     // }
   ],
-  bootstrap: [ AppComponent]
+  bootstrap: [  AppComponent]
 
 })
 export class AppModule { }
