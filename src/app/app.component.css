@@ -1,3 +1,8 @@
 .red {
-    color: blue
+    background: red
+}
+
+.blue {
+    background: greenyellow;
+    font-size: 1.5rem;
 }

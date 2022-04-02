@@ -11,6 +11,8 @@ import { getTargetElement, querySelector, targetTouches } from '@syncfusion/ej2-
 })
 
 export class AppComponent {
+  backgroundToggle: boolean
+  // backgroundToggle= false;
  title: string = '';
 // onInput(event:any){
 // this.title= event.target.value
