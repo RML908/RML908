@@ -7,12 +7,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LessonComponent } from './lessons/lesson.component';
+import { Lesson2Component } from './lesson2/lesson2.component';
+import { Lesson3Component } from './lesson3/lesson3.component';
+import { Lesson4Component } from './lesson4/lesson4.component';
 
 // import { AgmCoreModule } from '@agm/core';
 @NgModule({
   declarations: [
     AppComponent,
-  LessonComponent
+  LessonComponent,
+  Lesson2Component,
+  Lesson3Component,
+  Lesson4Component,
     
   ],
   imports: [
@@ -31,7 +37,7 @@ import { LessonComponent } from './lessons/lesson.component';
     //   provide: MapAPILoader, deps: [], useFactory: BingMapServiceProviderFactory 
     // }
   ],
-  bootstrap: [  AppComponent]
+  bootstrap: [AppComponent]
 
 })
 export class AppModule { }
