@@ -7,20 +7,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BingMapComponent } from './bing-map/bing-map.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LessonComponent } from './lessons/lesson.component';
+
 // import { AgmCoreModule } from '@agm/core';
 @NgModule({
   declarations: [
   
     BingMapComponent,
-  
-    
+    AppComponent,
+  LessonComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgbModule, 
+   
     // AgmCoreModule.forRoot({
     //   apiKey:'AIzaSyC92wlbwat_0jupbsww0tQh6ZtvvgtHbuc'
     // })
@@ -32,7 +34,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     //   provide: MapAPILoader, deps: [], useFactory: BingMapServiceProviderFactory 
     // }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent]
 
 })
 export class AppModule { }

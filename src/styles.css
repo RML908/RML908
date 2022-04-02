@@ -1,3 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+.red {
+    background-color: red;
+}
+
+.green {
+    /* background-color: green; */
+    color: rebeccapurple;
+    border: beige solid;
+}
+
+.green-text {
+    color: yellow;
+}
