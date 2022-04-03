@@ -1,6 +1,21 @@
-<p style="color:  solid green; font-size: 29px;">
+<div class="container">
+    <app-lesson2></app-lesson2>
+
+    <hr/>
+
+
+    <app-lesson *ngFor="let p of posts">
+        [post]="p"
+    </app-lesson>
+
+
+</div>
+
+
+
+<!-- <p style="color:  solid green; font-size: 29px;">
     {{now | date: 'long' }}
-</p>
+</p> -->
 <!-- <ul>
     <li *ngFor="let post of person">
         <P>{{post.title}} <b> {{post.author}}</b></P>
